@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Identificación"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/identificacion"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            android:inputType="numberDecimal">
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Nombre"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            android:inputType="numberDecimal">
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Fecha de prestamo"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/fechadeprestamo"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            android:inputType="numberDecimal">
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Valor Prestamo"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/valorprestamo"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            android:inputType="numberDecimal">
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+
+        >
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Tipo prestamo"
+            android:textStyle="bold" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rgcreditos"
+            >
+            <RadioButton
+                android:id="@+id/rbvivienda"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Vivienda(1%)"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <RadioButton
+                android:id="@+id/rblibreinversion"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Libre inversión(2%)"
+                android:layout_gravity="center_horizontal"
+                />
+            <RadioButton
+                android:id="@+id/rbvehiculo"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="vehiculo(1.5%)"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <RadioButton
+                android:id="@+id/rbeducacion"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Educacion(1.2%)"
+                android:layout_gravity="center_horizontal"
+                />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Nro cuotas"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgcuotas"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <RadioButton
+                android:id="@+id/rb12"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:layout_gravity="center_vertical"
+                />
+
+            <RadioButton
+                android:id="@+id/rb24"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="24"
+                android:layout_gravity="center_vertical"
+                />
+
+            <RadioButton
+                android:id="@+id/rb36"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="36"
+                android:layout_gravity="center_vertical"
+                />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/cbiva"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Incluye cuota de manejo?"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="10000 por cada cuota"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Valor Deuda"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/valordeuda"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="Total"
+            android:gravity="center">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Valor cuota"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/valorcuota"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="Total"
+            android:gravity="center">
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btcalcular"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="calcular">
+        </Button>
+
+        <Button
+            android:id="@+id/btlimpiar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="limpiar">
+        </Button>
+    </LinearLayout>
+
+
+</LinearLayout>
